@@ -21,6 +21,10 @@ public class  Customer extends User {
         this.token = token;
     }
 
+    public Customer() {
+
+    }
+
     public AccountDetails getAccountDetails() {
         return accountDetails;
     }
