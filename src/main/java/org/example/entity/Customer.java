@@ -5,17 +5,17 @@ import org.example.enums.Role;
 
 public class  Customer extends User {
     private AccountDetails accountDetails;
-    private Long balance;
+    private double balance;
     private int token;
 
-    public Customer(String name, int age, String email, Role role, Gender gender, AccountDetails accountDetails, Long balance, int token) {
+    public Customer(String name, int age, String email, Role role, Gender gender, AccountDetails accountDetails, double balance, int token) {
         super(name, age, email, role, gender);
         this.accountDetails = accountDetails;
         this.balance = balance;
         this.token = token;
     }
 
-    public Customer(AccountDetails accountDetails, Long balance, int token) {
+    public Customer(AccountDetails accountDetails, double balance, int token) {
         this.accountDetails = accountDetails;
         this.balance = balance;
         this.token = token;
@@ -33,11 +33,11 @@ public class  Customer extends User {
         this.accountDetails = accountDetails;
     }
 
-    public Long getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(Long balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 

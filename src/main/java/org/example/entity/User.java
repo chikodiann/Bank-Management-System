@@ -18,6 +18,12 @@ public class User {
         this.gender = gender;
     }
 
+    public User(String name, int age, String email) {
+        this.name = name;
+        this.age = age;
+        this.email = email;
+    }
+
     public User() {
     }
 
